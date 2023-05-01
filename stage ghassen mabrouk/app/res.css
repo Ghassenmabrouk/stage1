@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 45%; /* set the width of the left-side labels */
+}
+
+/* Set the width of the right-side inputs and select */
+input[type="text"],
+input[type="email"],
+input[type="message"],
+input[type="phone"],
+input[type="ID"],
+textarea,
+
+select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px;
+  width: 50%; /* set the width of the right-side inputs */
+  margin-bottom: 20px;
+}
+
+/* Set the width of the stats select to be 100% */
+select[name="D1"] {
+  width: 100%;
+}
+
+/* Set the margin of the stats label to be 0 so it lines up with the stats select */
+label[for="nom"] {
+  margin: 0;
+}
+
+/* Set the display of the phone input to block so it will take up the entire line */
+input[type="tel"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  position:relative;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  bottom:-70px;
+}

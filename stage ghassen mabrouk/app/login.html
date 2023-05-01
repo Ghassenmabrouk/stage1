@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script>
+
+	function verif(){
+	var n=document.getElementById("Username").value;
+	var p=document.getElementById("Password").value;
+	c=n.length;
+	var k=Number(document.getElementById("captcha-input").value);
+	if(c!=k){
+	alert ("wrong captcha");
+	
+	return false ;
+	}
+
+	
+	}
+</script>
+</head>
+<body>
+<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="register.html">register</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="login-container">
+			<h1>Login</h1>
+			<form method="POST" onsubmit="return verif()" action="login.php">
+				<input type="text" id="Username" name="name" placeholder="Username" required />
+				<input type="password" id="Password" name="pass"  placeholder="Password" required />
+				<div class="captcha-container">
+					<label>Please enter how many letter ur name have </label>
+					<span &nbsp; id="captcha-equation"></span>
+
+					<input type="number" id="captcha-input" required />
+				</div>
+				<input type="submit" value="login">
+			</form>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; All rights reserved.</p>
+	</footer>
+</body>
+</html>
